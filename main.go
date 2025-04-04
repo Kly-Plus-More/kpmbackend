@@ -31,7 +31,7 @@ func main() {
 	}))
 
 	/////////////////// POST ROUTES /////////////////////
-	router.POST("/training", HandleFormationForm)
+	router.POST("api/training", HandleFormationForm)
 
 	router.GET("/api/", func(context *gin.Context) {
 		context.JSON(http.StatusOK, gin.H{
